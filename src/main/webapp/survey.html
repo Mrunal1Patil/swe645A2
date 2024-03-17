@@ -1,0 +1,260 @@
+<!-- Code written by MRUNAL PRADEEP PATIL (GO1476387) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://www2.gmu.edu/">
+            <img src="gmulogo.png" alt="GMU Logo" />
+        </a>
+        <span>Department of <br />Software Engineering</span>
+    </header>
+    <div class="maincontainer">
+        <section class="survey">
+            <h1>Student Survey Form</h1>
+            <p>
+                <em>Please fill all the details in below form</em>
+            </p>
+
+            <form id="surveyForm" autocomplete="on" action="">
+                <fieldset>
+                    <legend>Student Personal Information</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>First name
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="text" required autofocus />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Last name
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="text" required />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Street Address
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" required type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>City
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" required type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>State
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" required type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Zip Code
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="number" required pattern="^\d{5}(?:[-\s]\d{4})?$" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Telephone No
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="number" required pattern="[0-9]{10,}" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Email
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="email" required placeholder="username@host.com" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Date of Survey
+                                    <i class="fa fa-asterisk" style="
+                        font-size: 8px;
+                        vertical-align: top;
+                        color: rgba(255, 0, 0, 0.5);
+                      "></i></label>
+                            </td>
+                            <td>
+                                <input class="inputbox" type="date" required />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Enter your Feedback</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>What do you like most about GMU Campus? </label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="liked" value="Students" />Students
+                                <input type="checkbox" name="liked" value="Location" />Location
+                                <input type="checkbox" name="liked" value="Campus" />Campus
+                                <input type="checkbox" name="liked" value="Atmosphere" />Atmosphere
+                                <input type="checkbox" name="liked" value="Dorm Rooms" />Dorm
+                                Rooms
+                                <input type="checkbox" name="liked" value="Sports" />Sports
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    What interested you the most in George Mason University?
+                                </label>
+                            </td>
+                            <td>
+                                <input type="radio" />Friends <input type="radio" />Television
+                                <input type="radio" />Internet <input type="radio" />Other
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>How likely are you to recommend GMU to others?</label>
+                            </td>
+                            <td>
+                                <select class="recommend">
+                                    <option value="">--Select--</option>
+                                    <option value="Very Likely">Very Likely</option>
+                                    <option value="Likely">Likely</option>
+                                    <option value="Unlikely">Unlikely</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Raffle (Chance to win a Movie Ticket) Enter atleast 10 Comma
+                                    separated numbers ranging from 1 through 100
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Additional Comments</label>
+                            </td>
+                            <td>
+                                <textarea name="comments" rows="4" cols="50"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br />
+
+                <input class="submitbutton" type="submit" value="Submit" />
+
+                <input class="cancelbutton" type="reset" value="Cancel" s />
+            </form>
+        </section>
+    </div>
+    <footer>
+        <address>
+            Mrunal Pradeep Patil G01476387 <br />
+            Department of Computer Science<br />
+            Nguyen Engineering Building<br />
+            4400 University Drive<br />
+            Fairfax, VA 22030<br />
+        </address>
+        <a class="logo" href="https://www2.gmu.edu/">
+            <img src="gmulogo.png" alt="GMU Logo" />
+        </a>
+    </footer>
+
+    <script>
+        //This script executes on click of submit button and it validates if all required fields are filled or not
+        document
+            .getElementById("surveyForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+                var isVal = true;
+                var reqFields = document.querySelectorAll("[required]");
+                reqFields.forEach(function (field) {
+                    if (!field.value.trim()) {
+                        isVal = false;
+                        return;
+                    }
+                });
+
+                if (isVal) {
+                    alert("Thank you! Your form is submitted!");
+                    document.getElementById("surveyForm").reset();
+                } else {
+                    alert("Please fill in all the required fields.");
+                }
+            });
+    </script>
+</body>
+
+</html>

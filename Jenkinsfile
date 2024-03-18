@@ -23,7 +23,7 @@ pipeline {
 		stage("Deploying to Rancher") {
 			steps {
 				script {
-					sh 'kubectl set image deployment/studentsurvey container-0=mrunal1patil/studentsurvey645:${BUILD_TIMESTAMP} -n default'
+					sh 'kubectl set image deployment/studentsurveyswe container-0=mrunal1patil/studentsurvey645:${BUILD_TIMESTAMP} -n default'
 				}
 			}
 		}
